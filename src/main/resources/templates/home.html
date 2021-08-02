@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../css/main.css" rel="stylesheet">
+    <style>
+        .container {
+            position: relative;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Brush Script MT';
+            font-size: 80px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+            border-radius: 100%;
+        }
+        .foofter {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-family: "Brush Script MT";
+            font-size: 40px;
+            background-color: transparent;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<nav th:replace="base :: navbar"></nav>
+<div th:class="Container">
+
+    <div class="container">
+        <img src="img_5terre_wide.jpg" alt="" width="1000" height="300">
+        <h1 th:class="center">Guest Book </h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLTPbrBK70oQbueqvT7jwyizIGtEL_3FNag&usqp=CAU" alt="Picture" width="500" height="480">
+
+    </div>
+
+</div>
+
+<div class="foofter">
+    <p>Rachel & Tom</p>
+    <h5>Jun-25-2021</h5>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

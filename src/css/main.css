@@ -1,0 +1,48 @@
+body {
+    background-image: url(https://cdn.wallpapersafari.com/32/44/dmRjU8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ .container {
+     position: relative;
+ }
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Brush Script MT';
+    font-size: 80px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    border-radius: 100%;
+}
+.navbar {
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+ .footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #100f0f;
+     color: white;
+     font-family: cursive;
+     text-align: center;
+ }

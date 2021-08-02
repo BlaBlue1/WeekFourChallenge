@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<nav th:replace="base :: navbar"></nav>
+<div th:class="container">
+    <form th:action="@{/displayPost}" th:object="${post}" method="post">
+        <input type="hidden" th:field="*{id}"><br>
+        Name:<input type="text" th:field="*{name}"><br>
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span><br>
+        Date:<input type="text" placeholder="7/28/2021" th:field="*{date}"><br>
+        <span th:if="${#fields.hasErrors('date')}" th:errors="*{date}"></span><br>
+        Wishes:<input type="text" th:field="*{wishes}"><br>
+        <span th:if="${#fields.hasErrors('wishes')}" th:errors="*{wishes}"></span><br>
+        <input type="submit" value="Enter"><br>
+    </form>
+
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
